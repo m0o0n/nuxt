@@ -1,38 +1,29 @@
 <template>
-    <div>
-        <h1>{{product.title.ru}}</h1>
-    <span>{{product.description.ru}}</span>
-    <span>Created: <p>{{product.created_at}}</p> </span>
-    </div>
-    
+  <div>
+    <h1>{{ product.title.ru }}</h1>
+    <span>{{ product.description.ru }}</span>
+    <span
+      >Created:
+      <p>{{ product.created_at }}</p>
+    </span>
+  </div>
 </template>
 
 <script>
-
-
+import { mapState } from 'vuex';
 export default {
-    // async asyncData({$axios, params}){
-    //     const response = await $axios.$get('http://bk.armar.solutions/api/product/'+ params.id)
-    //     return{product: response.data}
-    // },
-    async fetch(ctx){
-        
-        await ctx.store.dispatch('product/product/GetProduct', ctx.route.params.id)
-    },
-    
-    data: () => ({
-
-}),
-computed: {
-    product(){
-            return this.$store.getters['product/product/GetProduct']
-        }
-
-    },
-
-mounted() {
-   
-    console.log(this.product);
+  async fetch(ctx) {
+    await ctx.store.dispatch(
+      'product/product/GET_PRODUCT_ACTION',
+      ctx.route.params.id,
+    );
   },
-}
+
+  data: () => ({}),
+  computed: {
+    ...mapState({
+      product: state => state.product.product.product,
+    }),
+  },
+};
 </script>

@@ -1,21 +1,29 @@
-export const state =()=> ({ 
-    category: {}
-})
+const state = {
+	category: {},
+};
 
-export const mutations = {
-    setCategory(state, category){
-        state.category = category
-    }
+const mutations = {
+	SET_CATEGORY(state, category) {
+		state.category = category;
+	},
+};
 
-}
+const actions = {
+	async GET_CATEGORY_ACTION(context, payload) {
+		const response = await this.$axios.$get(
+			'http://bk.armar.solutions/api/category/' + payload
+		);
+		context.commit('SET_CATEGORY', response.data);
+	},
+};
 
-export const actions = {
-    async GetCategory(context, payload){
-        const response = await this.$axios.$get('http://bk.armar.solutions/api/category/'+ payload)
-        context.commit('setCategory', response.data)
-    }
-}
+const getters = {
+	GetCategory: state => state.category,
+};
 
-export const getters = {
-    GetCategory: state => state.category
+export default {
+	state,
+	mutations,
+	actions,
+	getters
 }

@@ -1,21 +1,30 @@
-export const state =()=> ({ 
-    product: {}
-})
+const state =  {
+	product: {},
+};
 
-export const mutations = {
-    setProduct(state, product){
-        state.product = product
-    }
+const mutations = {
+	SET_PRODUCT(state, product) {
+		state.product = product;
+	},
+};
 
-}
+const actions = {
+	async GET_PRODUCT_ACTION(context, payload) {
+		const response = await this.$axios.$get(
+			'http://bk.armar.solutions/api/product/' + payload
+		);
+		context.commit('SET_PRODUCT', response.data);
+	},
+};
 
-export const actions = {
-    async GetProduct(context, payload){
-        const response = await this.$axios.$get('http://bk.armar.solutions/api/product/'+ payload)
-        context.commit('setProduct', response.data)
-    }
-}
+const getters = {
+	GetProduct: state => state.product,
+};
 
-export const getters = {
-    GetProduct: state => state.product
+
+export default {
+    state,
+    mutations,
+    actions,
+	getters
 }
