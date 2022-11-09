@@ -7,7 +7,9 @@
       />
     </div>
     <div class="product_card__properties--container">
-      <h6>Title aaaaa</h6>
+      <h6>
+        <nuxt-link :to="/categories/ + item.id">{{ item.title.ru }}</nuxt-link>
+      </h6>
       <div class="product_card__properties">
         <span class="product_card__properties-year"
           ><IconsCalendar /> 2013</span
@@ -21,6 +23,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    item: Object,
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .product_card {

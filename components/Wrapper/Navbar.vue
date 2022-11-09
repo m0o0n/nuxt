@@ -1,5 +1,5 @@
 <template>
-  <nav class="wrapper">
+  <nav class="header">
     <section class="wrapper--darkGreen">
       <WrapperTop />
       <WrapperBottom />

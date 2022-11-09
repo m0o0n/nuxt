@@ -4,8 +4,12 @@
     <div class="categories">
       <Aside />
       <div class="postsContainer">
-        <ProductCard />
-        <div
+        <ProductCard
+          v-for="category of categories"
+          :key="category.id"
+          :item="category"
+        />
+        <!-- <div
           class="productCard"
           v-for="category of categories"
           :key="category.id"
@@ -14,7 +18,7 @@
             category.title.ru
           }}</nuxt-link>
           <span>{{ category.description.ru }}</span>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
