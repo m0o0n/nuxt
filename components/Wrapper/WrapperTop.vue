@@ -7,7 +7,7 @@
     <div class="header-top__menu">
       <ul class="header-top__list">
         <li class="header-top__item"><nuxt-link to="/">Sell with E-FARM</nuxt-link></li>
-        <li class="header-top__item"><nuxt-link to="/">About us</nuxt-link></li>
+        <li class="header-top__item"><nuxt-link to="/about/">About us</nuxt-link></li>
         <li class="header-top__item"><nuxt-link to="/">Why E-FARM</nuxt-link></li>
         <li class="header-top__item">
           <nuxt-link to="/">
