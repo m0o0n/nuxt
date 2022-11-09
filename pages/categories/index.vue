@@ -1,24 +1,14 @@
 <template>
-  <div>
+  <div class="categories"> 
     <h1>Categories</h1>
-    <div class="categories">
-      <Aside />
-      <div class="postsContainer">
+    <div class="categories__container">
+      <Aside ></Aside>
+      <div class="categories__posts">
         <ProductCard
           v-for="category of categories"
           :key="category.id"
           :item="category"
         />
-        <!-- <div
-          class="productCard"
-          v-for="category of categories"
-          :key="category.id"
-        >
-          <nuxt-link :to="/categories/ + category.id">{{
-            category.title.ru
-          }}</nuxt-link>
-          <span>{{ category.description.ru }}</span>
-        </div> -->
       </div>
     </div>
   </div>
@@ -46,9 +36,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.categories {
+
+.categories{
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__container{
+    display: flex;
+  }
+  
+  &__posts{
+  position: relative;
+  display: flex;
+  width: 800px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
+}
+
 .productCard {
   display: flex;
   flex-direction: column;

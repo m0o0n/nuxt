@@ -24,50 +24,65 @@
         position: relative;
         display: flex;
         align-items: center;
+    }
 
-        ul {
-            position: relative;
-            display: flex;
-            list-style: none;
+    &__list {
+        position: relative;
+        display: flex;
+        list-style: none;
+    }
 
-            li {
-                position: relative;
-                display: flex;
-                align-items: center;
-                flex-grow: 1;
-                color: #fff;
-                margin-left: 24px;
-                cursor: pointer;
-                transition: 0.3s all ease;
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        color: #fff;
+        margin-left: 24px;
+        cursor: pointer;
+        transition: 0.3s all ease;
 
-                &:hover {
-                    color: #61d63a;
-                    svg {
-                        fill: currentColor;
-                        color: #61d63a;
-                    }
-                }
-
-                &:nth-child(1) {
-                    margin-left: 0;
-                    color: #61d63a;
-                    &:hover {
-                        color: white;
-                    }
-                }
-
-                svg {
-                    width: 23px;
-                    height: 23px;
-                    padding-top: 3px;
-                    box-sizing: border-box;
-                    margin-left: 4px;
-                    fill: currentColor;
-                    color: #fff;
-                    transition: 0.3s all ease;
-                }
+        &:hover {
+            color: #61d63a;
+            svg {
+                fill: currentColor;
+                color: #61d63a;
             }
         }
-        
+
+        &:nth-child(1) {
+            margin-left: 0;
+            color: #61d63a;
+            &:hover {
+                color: white;
+            }
+        }
+
+        svg {
+            width: 23px;
+            height: 23px;
+            padding-top: 3px;
+            box-sizing: border-box;
+            margin-left: 4px;
+            fill: currentColor;
+            color: #fff;
+            transition: 0.3s all ease;
+        }
+    }
+
+    &__search{
+        position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        svg{
+            cursor: pointer;
+            margin-top: 5px;
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            color: #fff;
+        }
     }
 }

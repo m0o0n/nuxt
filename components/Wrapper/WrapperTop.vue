@@ -15,23 +15,13 @@
       <a tabIndex="0" href="tel:+494087407541"> +49(0) 40 874 075 41 </a>
     </div>
     <div class="header-top__menu">
-      <ul>
-        <li>Sell with E-FARM</li>
-        <li>About us</li>
-        <li>Why E-FARM</li>
-        <li>
+      <ul class="header-top__list">
+        <li class="header-top__item">Sell with E-FARM</li>
+        <li class="header-top__item">About us</li>
+        <li class="header-top__item">Why E-FARM</li>
+        <li class="header-top__item">
           <span>More</span>
-          <svg
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
-            focusable="false"
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            data-testid="KeyboardArrowDownIcon"
-          >
-            <path
-              d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-            ></path>
-          </svg>
+          <IconsDropDown />
         </li>
       </ul>
       <hr class="vertical-split" />
@@ -40,18 +30,8 @@
         <!-- select locales -->
       </div>
       <hr class="vertical-split" />
-      <div class="wrapper_top__search">
-        <svg
-          class="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeSmall searchOverlay_clickable__Shrwb css-ewv0me"
-          focusable="false"
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-          data-testid="SearchIcon"
-        >
-          <path
-            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-          ></path>
-        </svg>
+      <div class="header-top__search">
+        <IconsSearch />
       </div>
     </div>
   </section>
