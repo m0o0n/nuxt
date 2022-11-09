@@ -1,13 +1,13 @@
 <template>
-  <nav className="wrapper">
-    <section className="wrapper--darkGreen">
+  <nav class="wrapper">
+    <section class="wrapper--darkGreen">
       <WrapperTop />
       <WrapperBottom />
     </section>
-    <section className="wrapper_bottom--sticky">
+    <section class="wrapper_bottom--sticky">
       <div>
         <svg
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
           aria-hidden="true"
           viewBox="0 0 24 24"
@@ -21,7 +21,7 @@
       </div>
       <div>
         <svg
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
           aria-hidden="true"
           viewBox="0 0 24 24"
@@ -38,7 +38,7 @@
       </div>
       <div>
         <svg
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
           aria-hidden="true"
           viewBox="0 0 24 24"
@@ -52,7 +52,7 @@
       </div>
       <div>
         <svg
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
           aria-hidden="true"
           viewBox="0 0 24 24"
@@ -67,3 +67,16 @@
     </section>
   </nav>
 </template>
+
+<script>
+import WrapperTop from '~/components/Wrapper/WrapperTop';
+import WrapperBottom from '~/components/Wrapper/WrapperBottom';
+
+export default {
+  name: 'Navbar',
+  components: {
+    WrapperTop,
+    WrapperBottom,
+  },
+};
+</script>
