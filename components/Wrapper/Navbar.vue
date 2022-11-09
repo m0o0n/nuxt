@@ -67,16 +67,3 @@
     </section>
   </nav>
 </template>
-
-<script>
-import WrapperTop from '~/components/Wrapper/WrapperTop';
-import WrapperBottom from '~/components/Wrapper/WrapperBottom';
-
-export default {
-  name: 'Navbar',
-  components: {
-    WrapperTop,
-    WrapperBottom,
-  },
-};
-</script>

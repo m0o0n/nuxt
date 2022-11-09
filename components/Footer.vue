@@ -2,7 +2,7 @@
   <div class="footer">
     <div class="footer_columns">
       <div class="footer__logo-column">
-        <Logo />
+        <IconsLogo />
         <div class="footer__language-switcher"></div>
         <div class="footer__media"></div>
       </div>
@@ -31,7 +31,7 @@
     </div>
   </div>
 </template>
-<script>
+<!-- <script>
 import Logo from '~/components/Wrapper/Logo';
 export default {
   name: 'Footer',
@@ -39,4 +39,4 @@ export default {
     Logo,
   },
 };
-</script>
+</script> -->

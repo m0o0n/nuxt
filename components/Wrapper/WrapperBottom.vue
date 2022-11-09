@@ -1,7 +1,7 @@
 <template>
   <section class="wrapper_bottom">
     <div class="wrapper_bottom__logo">
-      <Logo />
+      <IconsLogo />
     </div>
     <div class="wrapper_bottom__menu">
       <ul>
@@ -44,13 +44,3 @@
     </div>
   </section>
 </template>
-
-<script>
-import Logo from '~/components/Wrapper/Logo';
-export default {
-  name: 'WrapperBottom',
-  components: {
-    Logo,
-  },
-};
-</script>

@@ -1,22 +1,12 @@
 <template>
   <div>
-    <Navbar />
+    <WrapperNavbar />
     <main>
       <nuxt />
     </main>
-    <Footer></Footer>
+    <Footer />
   </div>
 </template>
-<script>
-import Navbar from '~/components/Wrapper/Navbar';
-import Footer from '~/components/Footer/Footer';
-export default {
-  components: {
-    Navbar,
-    Footer,
-  },
-};
-</script>
 
 <!-- <ul>
         <li>
