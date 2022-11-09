@@ -26,6 +26,14 @@
         list-style: none;
         color: white;
         text-align: left;
+        padding: 0;
+        li {
+          cursor: pointer;
+          transition: 0.4s all ease;
+          &:hover {
+            color: #61d63a;
+          }
+        }
       }
     }
     div.footer__logo-column {

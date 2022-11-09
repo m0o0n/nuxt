@@ -6,9 +6,9 @@
       <h2>Products</h2>
       <div v-for="product of category.products" :key="product.id">
         <h3>
-          <a href="#" @click.prevent="openProduct(product)">{{
+          <nuxt-link :to="/product/ + product.id">{{
             product.title.ru
-          }}</a>
+          }}</nuxt-link>
         </h3>
         <span>{{ product.description.ru }}</span>
       </div>
@@ -30,11 +30,6 @@ export default {
     ...mapState({
       category: state => state.category.category.category,
     }),
-  },
-  methods: {
-    openProduct(product) {
-      this.$router.push('/product/' + product.id);
-    },
   },
 };
 </script>

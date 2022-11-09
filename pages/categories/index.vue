@@ -7,9 +7,9 @@
         v-for="category of categories"
         :key="category.id"
       >
-        <a href="#" @click.prevent="openCategory(category)">{{
+        <nuxt-link :to="/categories/ + category.id">{{
           category.title.ru
-        }}</a>
+        }}</nuxt-link>
         <span>{{ category.description.ru }}</span>
       </div>
     </div>
@@ -33,11 +33,6 @@ export default {
     ...mapState({
       categories: state => state.categories.categories.categories,
     }),
-  },
-  methods: {
-    openCategory(category) {
-      this.$router.push('/categories/' + category.id);
-    },
   },
 };
 </script>
