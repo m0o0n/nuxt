@@ -1,31 +1,51 @@
 <template>
   <div class="footer">
-    <div class="footer_columns">
-      <div class="footer__logo-column">
+    <div class="footer__columns">
+      <div class="footer__logo-column footer__item">
         <IconsLogo />
         <div class="footer__language-switcher"></div>
         <div class="footer__media"></div>
       </div>
 
-      <div>
-        <h5>Information</h5>
-        <ul>
-          <li>Imprint</li>
-          <li>Cookie Policy</li>
-          <li>Privacy Policy</li>
-          <li>Terms and Conditions</li>
-          <li>Cookie and settings</li>
+      <div class="footer__item">
+        <h5 class="footer__title">Information</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Imprint</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Cookie Policy</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Privacy Policy</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Terms and Conditions</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Cookie and settings</nuxt-link>
+          </li>
         </ul>
       </div>
 
-      <div>
-        <h5>Company</h5>
-        <ul>
-          <li>About us</li>
-          <li>Career</li>
-          <li>Press & News</li>
-          <li>Trustpilot</li>
-          <li>Contact</li>
+      <div class="footer__item">
+        <h5 class="footer__title">Company</h5>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">About us</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Career</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Press & News</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Trustpilot</nuxt-link>
+          </li>
+          <li class="footer__list-item">
+            <nuxt-link to="/" class="footer__link">Contact</nuxt-link>
+          </li>
         </ul>
       </div>
     </div>
