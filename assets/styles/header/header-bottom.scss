@@ -1,0 +1,60 @@
+.header-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 65px;
+
+    &__logo {
+        position: relative;
+        height: 30px;
+        width: 115px;
+        svg {
+            position: relative;
+            height: 30px;
+            width: 115px;
+        }
+    }
+    &__menu {
+        position: relative;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        
+            li {
+                color: white;
+                display: flex;
+                margin-right: 16px;
+                align-items: center;
+                font-size: 14px;
+                cursor: pointer;
+                transition: 0.3s all linear;
+
+                &:nth-child(6) {
+                margin-right: 0px;
+                }
+
+                &:hover {
+                    color: #61d63a;
+
+                    svg {
+                        fill: currentColor;
+                        color: #61d63a;
+                    }
+                }
+
+                svg {
+                    width: 23px;
+                    height: 23px;
+                    fill: currentColor;
+                    color: #fff;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

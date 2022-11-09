@@ -1,9 +1,9 @@
 <template>
-  <section class="wrapper_bottom">
-    <div class="wrapper_bottom__logo">
+  <section class="header-bottom">
+    <div class="header-bottom__logo">
       <IconsLogo />
     </div>
-    <div class="wrapper_bottom__menu">
+    <div class="header-bottom__menu">
       <ul>
         <li>Тракторы</li>
         <li>Комбайны</li>

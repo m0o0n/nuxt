@@ -1,6 +1,6 @@
 <template>
-  <section class="wrapper_top">
-    <div class="wrapper_top__phone">
+  <section class="header-top">
+    <div class="header-top__phone">
       <svg
         class="MuiSvgIcon-root MuiSvgIcon-colorAction MuiSvgIcon-fontSizeSmall css-ewv0me"
         focusable="false"
@@ -14,7 +14,7 @@
       </svg>
       <a tabIndex="0" href="tel:+494087407541"> +49(0) 40 874 075 41 </a>
     </div>
-    <div class="wrapper_top__menu">
+    <div class="header-top__menu">
       <ul>
         <li>Sell with E-FARM</li>
         <li>About us</li>

@@ -1,11 +1,11 @@
 <template>
-  <nav class="header">
-    <section class="wrapper--darkGreen">
+  <nav class="header header_color_da">
+    <section>
       <WrapperTop />
       <WrapperBottom />
     </section>
-    <section class="wrapper_bottom--sticky">
-      <div>
+    <section class="header-sticky">
+      <div class="header-sticky__item">
         <svg
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
@@ -19,7 +19,7 @@
         </svg>
         <span>Доставка до вашей двери</span>
       </div>
-      <div>
+      <div class="header-sticky__item">
         <svg
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
@@ -36,7 +36,7 @@
         </svg>
         <span>Трейд-ин старых машин</span>
       </div>
-      <div>
+      <div class="header-sticky__item">
         <svg
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
@@ -50,7 +50,7 @@
         </svg>
         <span>Гарантия по всей европе</span>
       </div>
-      <div>
+      <div class="header-sticky__item">
         <svg
           class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1cw4hi4"
           focusable="false"
