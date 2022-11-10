@@ -13,6 +13,7 @@ const actions = {
 		const response = await this.$axios.$get(
 			'http://bk.armar.solutions/api/category/' + payload
 		);
+		// console.log(payload)
 		context.commit('SET_CATEGORY', response.data);
 	},
 };

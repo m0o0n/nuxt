@@ -6,7 +6,7 @@
       <div class="categories__posts">
         <ProductCard
           v-for="category of categories"
-          :key="category.id"
+          :key="category.slug"
           :item="category"
         />
       </div>
@@ -15,23 +15,26 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 
 export default {
-  async fetch({ store }) {
-    if (store.getters['categories/categories/getCategories'].length === 0) {
-      await store.dispatch('categories/categories/GET_ALL_CATEGORIES_ACTION');
-    }
+  methods: {
+    ...mapActions({
+      GET_ALL_CATEGORIES_ACTION: 'categories/categories/GET_ALL_CATEGORIES_ACTION'
+    })
   },
 
-  data: () => ({
-    products: [],
-  }),
+  data: () => ({}),
   computed: {
     ...mapState({
       categories: state => state.categories.categories.categories,
     }),
   },
+
+  mounted() {
+    this.GET_ALL_CATEGORIES_ACTION()
+  }
+ 
 };
 </script>
 

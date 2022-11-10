@@ -8,7 +8,7 @@
     </div>
     <div class="product_card__properties--container">
       <h6>
-        <nuxt-link :to="/categories/ + item.id">{{ item.title.ru }}</nuxt-link>
+        <nuxt-link :to="/categories/ + item.slug">{{ item.title}}</nuxt-link>
       </h6>
       <div class="product_card__properties">
         <span class="product_card__properties-year"

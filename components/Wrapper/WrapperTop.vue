@@ -29,8 +29,4 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'WrapperTop',
-};
-</script>
+

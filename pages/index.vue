@@ -3,9 +3,18 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-
+import { mapActions } from 'vuex'
 export default {
-  name: 'IndexPage',
+  methods: {
+    ...mapActions({
+      GET_ALL_CATEGORIES_ACTION: 'categories/categories/GET_ALL_CATEGORIES_ACTION'
+    })
+  },
+  data: () => ({}),
+  mounted() {
+    this.GET_ALL_CATEGORIES_ACTION()
+  }
+  
+ 
 };
 </script>
