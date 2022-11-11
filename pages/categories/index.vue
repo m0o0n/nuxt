@@ -18,10 +18,11 @@
 import { mapState, mapActions } from 'vuex';
 
 export default {
-  methods: {
-    ...mapActions({
-      GET_ALL_CATEGORIES_ACTION: 'categories/categories/GET_ALL_CATEGORIES_ACTION'
-    })
+
+  async fetch(ctx) {
+    if (ctx.store.getters['categories/categories/getCategories'].length === 0) {
+      await ctx.store.dispatch('categories/categories/GET_ALL_CATEGORIES_ACTION');
+    }
   },
 
   data: () => ({}),
@@ -30,11 +31,6 @@ export default {
       categories: state => state.categories.categories.categories,
     }),
   },
-
-  mounted() {
-    this.GET_ALL_CATEGORIES_ACTION()
-  }
- 
 };
 </script>
 

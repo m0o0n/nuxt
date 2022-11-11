@@ -11,9 +11,9 @@ const mutations = {
 const actions = {
 	async GET_CATEGORY_ACTION(context, payload) {
 		const response = await this.$axios.$get(
-			'http://bk.armar.solutions/api/category/' + payload
+			'http://bk.armar.solutions/api/categories/' + payload
 		);
-		// console.log(payload)
+		
 		context.commit('SET_CATEGORY', response.data);
 	},
 };

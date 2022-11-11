@@ -11,8 +11,9 @@ const mutations = {
 const actions = {
 	async GET_PRODUCT_ACTION(context, payload) {
 		const response = await this.$axios.$get(
-			'http://bk.armar.solutions/api/product/' + payload
+			'http://bk.armar.solutions/api/products/' + payload
 		);
+		console.log(payload)
 		context.commit('SET_PRODUCT', response.data);
 	},
 };
